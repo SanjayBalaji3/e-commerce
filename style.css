@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    background: #fff9c4; 
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(to right, #fff9c4, #ffe082);
+}
+
+.left-menu a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #444;
+    font-size: 18px;
+}
+
+.search-box input {
+    padding: 8px 15px;
+    width: 250px;
+    border-radius: 20px;
+    border: 2px solid #ffcc80;
+}
+
+.cart {
+    font-size: 18px;
+}
+
+/* MAIN TITLE */
+.title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 35px;
+    color: #ff8f00;
+}
+
+/* PRODUCT GRID */
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    padding: 30px;
+}
+
+.product {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.product img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ffcc80;
+}
+
+/* BUY BUTTON */
+.buy-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #ffd54f;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.buy-btn:hover {
+    background: #ffb300;
+    box-shadow: 0 0 10px #ffe082;
+}
+/* FOOTER */
+footer {
+    background: linear-gradient(to top, #ffe082, #fff8b0);
+    margin-top: 50px;
+    padding: 30px 0;
+    color: #444;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    padding: 0 40px;
+}
+
+.footer-box h3 {
+    color: #ff8f00;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.footer-box p {
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+.footer-box p:hover {
+    color: #ff6f00;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+copyright {
+    text-align: center;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 2px solid #ffd54f;
+    font-size: 15px;
+    color: #555;
+}
